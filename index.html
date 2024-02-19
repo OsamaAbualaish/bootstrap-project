@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>default</title>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-lg ">
+      <a class="navbar-brand" href="#"><img src="image/logo2.png" alt="" style="height: 25px ; width: 100px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              travle
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">our destinations</a></li>
+              <li><a class="dropdown-item" href="#">this month offers</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">first class</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about</a>
+          </li>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-secondary w-50 shadow" type="submit">Search</button>
+          <!-- btn to open modal -->
+
+          <button class="btn btn-secondary w-50 ms-2 shadow" data-bs-toggle="modal" href="#exampleModalToggle"
+            role="button">login</button>
+
+          <!-- modal -->
+
+
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel">sign in</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- form  sign in-->
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with
+                        anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-check mb-3 form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">save the password</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-25">login</button>
+                    <!-- submit button reload th bage -->
+                  </form>
+                  <!-- form -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button class="btn btn-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">sign up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2">sign up</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="row g-3">
+                    <div class="col-6">
+                      <label for="firstname" class="form-label">First name</label>
+                      <input type="text" class="form-control" placeholder="First name" aria-label="First name"
+                        id="firstname">
+                    </div>
+                    <div class="col-6">
+                      <label for="lastname" class="form-label">Last name</label>
+                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"
+                        id="lastname">
+                    </div>
+
+
+                    <div class="col-md-6">
+                      <label for="inputEmail4" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputPassword4" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">City</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">State</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          i'm not robot
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-dark">Sign in</button>
+                    </div>
+                  </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Back to login</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- -------------------------------1st sec--------------------------------------------- -->
+  <div class="all w-100">
+
+    <div class="side-link">
+      <ul class="links">
+        <li><a href="#" class=" fw-bold"><i class="fa-brands side-icon  fa-facebook text-secondary"></i></a></li>
+        <li><a href="#" class=" fw-bold"><i class="fa-brands side-icon   fa-twitter text-secondary"></i></a></li>
+        <li><a href="#" class=" fw-bold"><i class="fa-brands  side-icon  fa-instagram text-secondary"></i></a></li>
+        <li><a href="#" class=" fw-bold"><i class="fa-brands side-icon  fa-pinterest text-secondary"></i></a></li>
+
+      </ul>
+    </div>
+
+    <div class="1st-sec rounded-bottom-4">
+
+      <div id="carouselExampleDark" class="carousel carousel-dark  slide " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="image/maldives.jpg" class="d-block w-100" alt="..." style="height: 90vh;">
+            <div class="carousel-caption bg-dark  rounded-4 d-none d-md-block text-light">
+              <h2 class="fw-bold">maldives</h2>
+              <p>Enjoy the inviting blue waters, beautiful reefs and white sands of the Maldives while staying at the W
+                Maldives. Offering a tranquil escape, the hotel features a diving center, fitness center and outdoor
+                infinity pool. .</p>
+              <button class="btn btn-light"> book now</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="image/calm-water-in-european-city.jpg" class="d-block w-100" alt="..." style="height: 90vh;">
+            <div class="carousel-caption bg-dark  rounded-4 d-none d-md-block text-light">
+              <h2 class="fw-bold">A City to Fall in Love With . venice </h2>
+              <p>Visit the Rialto Market and the charming Rialto Bridge and then take a gondola ride through the canals
+                before learning how Venetian and Murano glass is made. The city’s churches, piazzas and museums are all
+                worth a visit and can be easily reached within a short walk. </p>
+              <button class="btn btn-light"> book now</button>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="image/toronto-stunning-sunset.jpg" class="d-block w-100" alt="..." style="height: 90vh;">
+            <div class="carousel-caption bg-dark  rounded-4 d-none d-md-block text-light">
+              <h2 class="fw-bold">Toronto </h2>
+              <p>The most populous city in Canada has many cultural experiences waiting for visitors, including the Art
+                Gallery of Ontario, the Ontario Science Centre, or the secret passageways of Casa Loma. The Hockey Hall
+                of Fame is a testament to this sport's widespread popularity in Ontario. Fans are encouraged to see the
+                Toronto Maple Leafs play at the Air Canada Centre.</p>
+              <button class="btn btn-light"> book now</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="image/hiking.avif" class="d-block w-100" alt="..." style="height: 90vh;">
+            <div class="carousel-caption bg-dark  rounded-4 d-none d-md-block text-light">
+              <h2 class="fw-bold">Hiking at Tour Du Mont Blanc </h2>
+              <p> in France, Italy, Switzerland This famous long-distance trek in Europe affords ardent adventurers the
+                rare opportunity to traverse three of the continent's most charming countries in a once-in-a-lifetime
+                expedition. Teeming with picturesque scenery, it passes through gorgeous alpine meadows, rare mountain
+                passes.</p>
+              <button class="btn btn-light"> book now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="image/paris2.jpg" class="d-block w-100" alt="..." style="height: 90vh;">
+            <div class="carousel-caption bg-dark  rounded-4 d-none d-md-block text-light">
+              <h2 class="fw-bold">paris </h2>
+              <p> When we think of Paris, we often imagine couples in love, à la Edith Piaf singing “Sous le ciel de
+                Paris” or “La vie en rose“, or kissing, as in Robert Doisneau’s famous photo “The Kiss by the Hôtel de
+                Ville”.</p>
+              <button class="btn btn-light"> book now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div class="cap bg-dark  rounded-top-0 rounded-bottom-4 text-light p-4  shadow gap-2 card">
+        <div class="card-body">
+          <h2>air travle </h2>
+          <p> this month offer distination for you as above is the most wonderful places for weekend , </br>
+            choose your fav. distination and book now there are many dream story to achive make your vication powerful
+            with us enjoy</p>
+          <button class="btn btn-primary btn-lg px-5"> book now </button>
+        </div>
+
+
+      </div>
+
+    </div> <!-- ist sec -->
+
+    <hr>
+
+    <div class="2nd-sec ">
+      <div class="contaner-md shadow bg-dark rounded-4 text-light  d-flex align-items-center justify-content-center "
+        style="height: 20vh;">
+        <h1 class="fw-bold">what we offer</h1>
+      </div>
+
+      <!-- ------------------- -->
+      <div class="listt my-3 rounded">
+        <div class="accordion accordion-flush " id="accordionFlushExample">
+          <div class="accordion-item  ">
+            <h2 class="accordion-header  " id="flush-headingOne">
+              <button class="accordion-button collapsed shadow fw-bold fs-4 rounded " type="button"
+                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                aria-controls="flush-collapseOne">
+                flights
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p> Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the first item's accordion body. Lorem ipsum dolor sit
+                  amet, consectetur adipisicing elit. Atque reprehenderit at earum ipsum consectetur quis odit quisquam
+                  dignissimos provident, hic adipisci itaque voluptas cupiditate, incidunt, dolore ut in repudiandae
+                  aut? </p>
+                <button class="btn btn-dark btn-lg  px-5 "> search now </button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item ">
+            <h2 class="accordion-header " id="flush-headingTwo">
+              <button class="accordion-button shadow collapsed fw-bold fs-4 rounded " type="button"
+                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                aria-controls="flush-collapseTwo">
+                hotels
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p> Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
+                  being filled with some actual content. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consectetur fugiat alias vero esse ipsa vel repellat optio totam natus nihil!</p>
+                <button class="btn btn-dark btn-lg px-5 "> search now </button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header " id="flush-headingThree">
+              <button class="accordion-button collapsed shadow fw-bold fs-4 rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                aria-controls="flush-collapseThree">
+                car rentals
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the space to make it look, at least at first
+                  glance, a bit more representative of how this would look in a real-world application.</p>
+                <button class="btn btn-dark btn-lg px-5 "> search now </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- 2nd-sec -->
+
+    <hr>
+    <!-- --------------------------------------sec 3---------------------------------------- -->
+    <div class="3rd-sec">
+
+      <div class="contaner-md shadow bg-dark rounded-4 text-light  d-flex align-items-center justify-content-center "
+        style="height: 15vh;">
+        <h1 class="fw-bold">translation</h1>
+      </div>
+
+      <div class="card1 my-2 shadow">
+        <div class="card h-100 shadow rounded">
+          <div
+            class="card-header h-25  d-flex align-items-center justify-content-center fw-bold fs-2 text-light bg-secondary ">
+            translate arabic to english
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">text to translate</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+              data-bs-content="copy">
+              <button type="button" class="btn btn-secondary" id="btn-copy" data-bs-container="body"
+                data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="right" data-bs-content="copied">
+                copy
+              </button>
+            </span>
+
+
+
+            <div class="mb-2">
+
+              <textarea class="form-control my-2" placeholder="translate:" id="exampleFormControlTextarea1"
+                rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card1 my-2 shadow">
+        <div class="card h-100 shadow rounded">
+          <div
+            class="card-header h-25  d-flex align-items-center justify-content-center fw-bold fs-2 text-light bg-secondary ">
+            translate french to english
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">text to translate</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+              data-bs-content="copy">
+              <button type="button" class="btn btn-secondary" id="btn-copy" data-bs-container="body"
+                data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="right" data-bs-content="copied">
+                copy
+              </button>
+            </span>
+
+
+
+            <div class="mb-2 shadow">
+
+              <textarea class="form-control my-2" placeholder="translate:" id="exampleFormControlTextarea1"
+                rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card1 my-2">
+        <div class="card h-100 shadow rounded">
+          <div
+            class="card-header h-25  d-flex align-items-center justify-content-center fw-bold fs-2 text-light bg-secondary ">
+            translate japanese to english
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">text to translate</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+              data-bs-content="copy">
+              <button type="button" class="btn btn-secondary" id="btn-copy" data-bs-container="body"
+                data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="right" data-bs-content="copied">
+                copy
+              </button>
+            </span>
+
+
+
+            <div class="mb-2">
+
+              <textarea class="form-control my-2" placeholder="translate:" id="exampleFormControlTextarea1"
+                rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <hr>
+
+
+
+
+    </div><!-- 3rd sec -->
+
+    <!-- --------------------------------------------4th sec-------------------------- -->
+    <div class="4th-sec">
+
+      <div class="bgimg">
+
+      </div>
+      <div
+        class="contaner-md shadow bg-dark rounded-bottom-4 text-light  d-flex align-items-center justify-content-center "
+        style="height: 15vh;">
+        <h1>travel now</h1>
+      </div>
+
+      <div class="row w-100 mt-4">
+        <div class="col-lg-4 col-md-6  ">
+
+          <div class="card  mx-auto my-4 shadow  px-2" style="width: 21rem; height: 70vh;">
+            <img src="image/makkah.jpg" class="card-img-top  rounded-top-2 shadow " alt="..." style="height: 50vh;">
+            <div class="card-body  ">
+              <h3 class="card-title d-inline-block">makkah</h3>
+              <a href="#" class="btn btn-dark float-end">book now</a>
+              <p class="card-text"> visit makkah now with big offer</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6  ">
+
+          <div class="card  mx-auto my-4 shadow  px-2" style="width: 21rem; height: 70vh;">
+            <img src="image/madinah.webp" class="card-img-top  rounded-top-2 shadow " alt="..." style="height: 50vh;">
+            <div class="card-body  ">
+              <h4 class="card-title d-inline-block">el madinah <br> el mnowara</h4>
+              <a href="#" class="btn btn-dark float-end">book now</a>
+              <p class="card-text"> visit el madinah now with big offer</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6  ">
+
+          <div class="card  mx-auto my-4 shadow  px-2" style="width: 21rem; height: 70vh;">
+            <img src="image/Sharm-El-Sheikh.jpg" class="card-img-top  rounded-top-2 shadow " alt="..."
+              style="height: 50vh;">
+            <div class="card-body  ">
+              <h4 class="card-title d-inline-block">Sharm-El-Sheikh</h4>
+              <a href="#" class="btn btn-dark float-end">book now</a>
+              <p class="card-text"> visit sharm now with big offer</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6  ">
+
+          <div class="card  mx-auto my-4 shadow  px-2" style="width: 21rem; height: 70vh;">
+            <img src="image/parisss.png" class="card-img-top  rounded-top-2 shadow " alt="..."
+              style="height: 50vh;">
+            <div class="card-body  ">
+              <h4 class="card-title d-inline-block">france-paris</h4>
+              <a href="#" class="btn btn-dark float-end">book now</a>
+              <p class="card-text"> visit paris now with big offer</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6  ">
+
+          <div class="card  mx-auto my-4 shadow  px-2" style="width: 21rem; height: 70vh;">
+            <img src="image/Toronto.webp" class="card-img-top  rounded-top-2 shadow " alt="..."
+              style="height: 50vh;">
+            <div class="card-body  ">
+              <h4 class="card-title d-inline-block">canada-toronto</h4>
+              <a href="#" class="btn btn-dark float-end">book now</a>
+              <p class="card-text"> visit toronto now with big offer</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6  ">
+
+          <div class="card  mx-auto my-4 shadow  px-2" style="width: 21rem; height: 70vh;">
+            <img src="image/italy.jpg" class="card-img-top  rounded-top-2 shadow " alt="..."
+              style="height: 50vh;">
+            <div class="card-body  ">
+              <h4 class="card-title d-inline-block">Italy</h4>
+              <a href="#" class="btn btn-dark float-end">book now</a>
+              <p class="card-text"> visit Italy now with big offer</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6  ">
+
+          <div class="card  mx-auto my-4 shadow  px-2" style="width: 21rem; height: 70vh;">
+            <img src="image/dubai.avif" class="card-img-top  rounded-top-2 shadow " alt="..."
+              style="height: 50vh;">
+            <div class="card-body  ">
+              <h4 class="card-title d-inline-block">Dubai</h4>
+              <a href="#" class="btn btn-dark float-end">book now</a>
+              <p class="card-text"> visit dubai now with big offer</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6  ">
+
+          <div class="card  mx-auto my-4 shadow  px-2" style="width: 21rem; height: 70vh;">
+            <img src="image/hawaii.jpg" class="card-img-top  rounded-top-2 shadow " alt="..."
+              style="height: 50vh;">
+            <div class="card-body  ">
+              <h4 class="card-title d-inline-block">hawaii</h4>
+              <a href="#" class="btn btn-dark float-end">book now</a>
+              <p class="card-text"> visit hawaii now with big offer</p>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- continue  -->
+      </div>
+
+
+
+    </div><!-- 4th sec -->
+    
+
+      <br><br><br><br>
+      <hr>
+    </div><!-- sec5 -->
+
+    <div class="sec6 container-lg">
+      <div class="  text-dark  d-flex align-items-center justify-content-center " style="height: 15vh;">
+        <h1>our plan</h1>
+      </div>
+
+      <!-- ------ -->
+      <div class="card  my-5 land-card text-light shadow rounded-4 mx-auto mb-3">
+        <div class="row g-0 h-100 flex-row-reverse ">
+          <div class="col-md-4  c-path1  h-100">
+            <img src="image/cruise.jpg" class="img-fluid land-img " alt="..." style="transition: 0.4s;">
+          </div>
+          <div class="col-md-8 lol h-100">
+            <div class="card-body p-lg-5 p-4  ">
+              <h2 class="card-title">cruise journey</h2>
+              <p class="card-text"><i class="fa-regular fa-calendar-days"></i> mon, fab 10, 2024 </p>
+              <p class="card-text underline-card"></p>
+
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam quis iusto,
+                sapiente hic pariatur optio suscipit minus ipsa natus laboriosam consectetur esse reiciendis obcaecati
+                tempora beatae harum officia ea!</p>
+              <div class="card-text card-button mt-5 ">
+                <button class="btn btn-light me-1"><i class="fa-solid fa-tag"></i> save</button>
+                <button class="btn btn-light me-1"> <i class="fa-regular fa-clock"></i> travel time</button>
+                <button class="btn btn-light"><i class="fa-solid fa-play"></i> book now</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="card  my-5 land-card land2-card text-light shadow rounded-4 mx-auto mb-3">
+        <div class="row g-0 h-100  ">
+          <div class="col-md-4  c-path2  h-100">
+            <img src="image/firistclass.avif" class="img-fluid land2-img " alt="..." style="transition: 0.4s;">
+          </div>
+          <div class="col-md-8 h-100">
+            <div class="card-body p-lg-5 p-4  ">
+              <h2 class="card-title">first class</h2>
+              <p class="card-text"><i class="fa-regular fa-calendar-days"></i> mon, fab 10, 2024 </p>
+              <p class="card-text underline-card"></p>
+
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam quis iusto,
+                sapiente hic pariatur optio suscipit minus ipsa natus laboriosam consectetur esse reiciendis obcaecati
+                tempora beatae harum officia ea!</p>
+              <div class="card-text card-button mt-5 ">
+                <button class="btn btn-light me-1"><i class="fa-solid fa-tag"></i> save</button>
+                <button class="btn btn-light me-1"> <i class="fa-regular fa-clock"></i> details</button>
+                <button class="btn btn-light"><i class="fa-solid fa-play"></i> book now</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3333 -->
+
+      <div class="card  my-5 land-card text-light shadow rounded-4 mx-auto mb-3">
+        <div class="row g-0 h-100 flex-row-reverse ">
+          <div class="col-md-4  c-path1  h-100">
+            <img src="image/premium-economy-w1130x468.avif" class="img-fluid land-img " alt="..." style="transition: 0.4s;">
+          </div>
+          <div class="col-md-8 h-100">
+            <div class="card-body p-lg-5 p-4  ">
+              <h2 class="card-title">premium economy class</h2>
+              <p class="card-text"><i class="fa-regular fa-calendar-days"></i> mon, fab 10, 2024 </p>
+              <p class="card-text underline-card"></p>
+
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam quis iusto,
+                sapiente hic pariatur optio suscipit minus ipsa natus laboriosam consectetur esse reiciendis obcaecati
+                tempora beatae harum officia ea!</p>
+              <div class="card-text card-button mt-5 ">
+                <button class="btn btn-light me-1"><i class="fa-solid fa-tag"></i> save</button>
+                <button class="btn btn-light me-1"> <i class="fa-regular fa-clock"></i> details</button>
+                <button class="btn btn-light"><i class="fa-solid fa-play"></i> book now</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 444 -->
+      <div class="card  my-5 land-card  land2-card text-light shadow rounded-4 mx-auto mb-3">
+        <div class="row g-0 h-100  ">
+          <div class="col-md-4  c-path2  h-100">
+            <img src="image/economy-class-w1130x468.avif" class="img-fluid land2-img " alt="..." style="transition: 0.4s;">
+          </div>
+          <div class="col-md-8 h-100">
+            <div class="card-body p-lg-5 p-4  ">
+              <h2 class="card-title">economy class</h2>
+              <p class="card-text"><i class="fa-regular fa-calendar-days"></i> mon, fab 10, 2024 </p>
+              <p class="card-text underline-card"></p>
+
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam quis iusto,
+                sapiente hic pariatur optio suscipit minus ipsa natus laboriosam consectetur esse reiciendis obcaecati
+                tempora beatae harum officia ea!</p>
+              <div class="card-text card-button mt-5 ">
+                <button class="btn btn-light me-1"><i class="fa-solid fa-tag"></i> save</button>
+                <button class="btn btn-light me-1"> <i class="fa-regular fa-clock"></i> details</button>
+                <button class="btn btn-light"><i class="fa-solid fa-play"></i> book now</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- ------------------------------------sec 5---------------- -->
+    <div class="sec-5">
+      <div class="bg2img">
+
+      </div>
+      <hr>
+      <div class="contaner-md shadow bg-dark rounded-4 text-light  d-flex align-items-center justify-content-center "
+        style="height: 15vh;">
+        <h1>thanks for our team</h1>
+      </div>
+
+      <div class="row  container-lg mx-auto mt-4">
+        <div class="col-lg-4 col-12 my-3">
+
+
+          <div class=" info-card card bg-dark text-white position-relative rounded-4 mx-auto"
+            style="width: 19rem; height: 28rem;">
+            <img src="image/camera.jpg" class="card-img h-100 rounded-4" alt="...">
+            <div class="card-img-overlay rounded-4 ">
+              <div class="trans">
+
+                <h5 class="card-title">osama abualaish</h5>
+
+                <p class="card-text"><i class="fa-regular fa-clock"></i> fab 10, 2024 </p>
+              </div>
+
+              <div class="img-title position-absolute " style="bottom:40px; left: 30px; height: 40%;">
+                <img src="image/camera.jpg" class="card-round-img " alt=".."
+                  style="width: 55%; height: 80%; border-radius: 50%;">
+                <p class="card-text  mb-0 mt-2">team photographer mang.</p>
+                <a href="#" class="text-light"><p class="card-text ">osphotograph.com</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------ -->
+        <div class="col-lg-4 col-12  my-3 ">
+
+
+          <div class=" info-card card bg-dark text-white position-relative rounded-4 mx-auto"
+            style="width: 19rem; height: 28rem;">
+            <img src="image/which-development.jpg" class="card-img h-100 rounded-4" alt="...">
+            <div class="card-img-overlay rounded-4 ">
+              <div class="trans">
+
+                <h5 class="card-title">osama abualaish</h5>
+
+                <p class="card-text"><i class="fa-regular fa-clock"></i> fab 10, 2024 </p>
+              </div>
+
+              <div class="img-title position-absolute " style="bottom:40px; left: 30px; height: 40%;">
+                <img src="image/which-development.jpg" class="card-round-img " alt=".."
+                  style="width: 55%; height: 80%; border-radius: 50%;">
+                <p class="card-text  mb-0 mt-2"> web development mang. team</p>
+                <a href="#" class="text-light"><p class="card-text ">osweb.com</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- --------------------- -->
+        <div class="col-lg-4 col-12  my-3">
+
+
+          <div class=" info-card card bg-dark text-white position-relative rounded-4 mx-auto"
+            style="width: 19rem; height: 28rem;">
+            <img src="image/ux-ui.webp" class="card-img h-100 rounded-4" alt="...">
+            <div class="card-img-overlay rounded-4 ">
+              <div class="trans">
+
+                <h5 class="card-title">osama abualaish</h5>
+
+                <p class="card-text"><i class="fa-regular fa-clock"></i> fab 10, 2024 </p>
+              </div>
+
+              <div class="img-title position-absolute " style="bottom:40px; left: 30px; height: 40%;">
+                <img src="image/ux-ui.webp" class="card-round-img " alt=".."
+                  style="width: 55%; height: 80%; border-radius: 50%;">
+                <p class="card-text  mb-0 mt-2">ux-ui team mang.</p>
+                <a href="#" class="text-light"><p class="card-text ">osux_ui.com</p></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div> <!-- sec6 -->
+
+    <div class="sec7 container-lg">
+      <div class="  text-dark  d-flex align-items-center justify-content-center " style="height: 15vh;">
+        <h1>contact us</h1>
+      </div>
+
+      <div class="row mb-3 d-flex justify-content-around">
+        <div class="col-lg-3 shadow p-2 col-md-6  my-4 rounded" style="height: 30vh; width: 13rem;">
+
+          <div class="card text-center  h-100 ">
+            <div class="card-body h-100 d-flex flex-column justify-content-between">
+              <h3 class="card-title">follow us</h3>
+              <a href="#" class="fs-1 text-dark"><i class="fa-brands fa-facebook "></i></a>
+              <p class="card-text">follow link</p>
+            </div>
+          </div>
+
+
+
+        </div>
+        <!-- 2 -->
+        <div class="col-lg-3 shadow p-2 col-md-6   my-4 rounded" style="height: 30vh; width: 13rem;">
+
+          <div class="card text-center  h-100 ">
+            <div class="card-body h-100 d-flex flex-column justify-content-between">
+              <h3 class="card-title">follow us</h3>
+              <a href="#" class="fs-1 text-dark"><i class="fa-brands   fa-twitter "></i></a>
+              <p class="card-text">follow link</p>
+            </div>
+          </div>
+
+          
+
+
+        </div>
+        <!-- 3 -->
+        <div class="col-lg-3 shadow p-2 col-md-6   my-4 rounded" style="height: 30vh; width: 13rem;">
+
+          <div class="card text-center  h-100 ">
+            <div class="card-body h-100 d-flex flex-column justify-content-between">
+              <h3 class="card-title">follow us</h3>
+              <a href="#" class="fs-1 text-dark"><i class="fa-brands  fa-instagram "></i></a>
+              <p class="card-text">follow link</p>
+            </div>
+          </div>
+
+
+
+        </div>
+        <!-- 4 -->
+        <div class="col-lg-3 shadow p-2 col-md-6  my-4 rounded" style="height: 30vh; width: 13rem;">
+
+          <div class="card text-center  h-100 ">
+            <div class="card-body h-100 d-flex flex-column justify-content-between">
+              <h3 class="card-title">follow us</h3>
+              <a href="#" class="fs-1 text-dark"><i class="fa-brands  fa-pinterest "></i></a>
+              <p class="card-text">follow link</p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+    </div><!-- sec7 -->
+  </div> <!-- all -->
+
+  <footer class="footer p-4 bg-dark text-light">
+
+    <div class="row text-center h-100">
+
+      <div class="col-lg-4 my-3" style="height: 70%;">
+
+        <div class="card bg-dark text-light h-100 border-light  border-0 rounded-0">
+          <div class="card-head d-flex align-items-center justify-content-around border-bottom">
+
+            <img src="image/logo2.png" alt="" style=" height: 40px ; width: 70px;">
+            <h2 class="card-title fw-light"> contact info </h2>
+          </div>
+          <div class="card-body text-center">
+            <p class="card-text">tel:+20 00 000 0000 00</p>
+            <p class="card-text">fax:+20 00 000 0000 00</p>
+            <p class="card-text">email: air_sky22@sky.com</p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- 2 -->
+      <div class="col-lg-4 my-3" style="height: 70%;">
+
+        <div class="card bg-dark text-light h-100 border-light border-0 rounded-0">
+          <div class="card-head d-flex align-items-center justify-content-around border-bottom">
+
+            <img src="image/logo2.png" alt="" style=" height: 40px ; width: 70px;">
+            <h2 class="card-title fw-light"> our location </h2>
+          </div>
+          <div class="card-body text-center">
+            <p class="card-text">cairo ----- ------</p>
+            <p class="card-text">alex ------ -----</p>
+            <p class="card-text">dubai ----- -----</p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+      <!-- 3 -->
+      <div class="col-lg-4 my-3" style="height: 70%;">
+
+        <div class="card bg-dark text-light h-100 border-light border-0 rounded-0">
+          <div class="card-head d-flex align-items-center justify-content-around border-bottom">
+
+            <img src="image/logo2.png" alt="" style=" height: 40px ; width: 70px;">
+            <h2 class="card-title fw-light">  our partners </h2>
+          </div>
+          <div class="card-body text-center">
+            <p class="card-text">travle.ink</p>
+            <p class="card-text">ario.co</p>
+            <p class="card-text">aviation for sky.co</p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <hr>
+      <div class="  text-light d-flex align-items-start justify-content-center " style="height: 5vh;">
+        <h4 class="fs-5 fw-light">all rights reserved by air sky company &copy; 2024 </h4>
+      </div>
+      
+
+
+
+
+
+
+    </div>
+
+
+  </footer><!-- footer -->
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

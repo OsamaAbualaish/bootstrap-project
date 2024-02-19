@@ -1,0 +1,181 @@
+:root{
+    --main-color:#212529;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainn{
+    background-color: var(--main-color);
+    position: sticky;
+    width: 100%;
+}
+body{
+    height: 500vh;
+}
+
+.all{
+    position: relative;
+}
+.side-icon:hover{
+    color: black !important;
+}
+.side-link{
+    
+    z-index: 3;
+    height: 100vh;
+    width: 50px;
+   
+    position: fixed;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-icon{
+    
+    font-size: 45px;
+
+}
+ul {
+     padding-left: 0rem; 
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 70%;
+}
+@media (max-width:768px) {
+    .links li a i{
+        
+        font-size: 30px;
+    
+    }
+    .land-card{
+        max-width: 80%;
+    }
+    .land-img,.land2-img{
+       
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px ;
+    }
+   
+    .c-path1{
+        clip-path: polygon(0% 0% ,100% 0%, 100% 100% ,0% 100%);
+
+    }
+    .c-path2{
+        clip-path: polygon(0% 0% ,100% 0%, 100% 100% ,0% 100%);
+
+    }
+    
+}
+.modal-dialog{
+    z-index: 2500 !important;
+}
+.carousel-caption{
+    opacity: .7 !important;
+
+}
+
+.bgimg{
+    width: 100%;
+    height: 50vh;
+    background: url(../image/didn-t-think-it-could-rain-this-high-up.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bg2img{
+    width: 100%;
+    height: 50vh;
+    background: url(../image/a380-2.jpg);
+    background-position: center  ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.534);
+    padding: 25px;
+    
+   
+}
+.trans{
+    transition: 0.2s;
+}
+.info-card:hover .trans{
+    margin-top: 15px;
+    
+}
+.info-card:hover .card-img-overlay{
+    background-color: rgba(3, 21, 37, 0.466);
+    
+    padding-top: 30px;
+}
+
+.info-card{transition: 0.4s;}
+.info-card:hover{
+    transform: scale(0.95,0.85);
+   
+
+}
+.card-round-img{
+    border: black 2px solid;
+}
+
+@media (min-width:768px) {
+    .c-path1{
+        clip-path: polygon(0% 0% ,100% 0%, 100% 100% ,10% 100%);
+
+    }
+    .c-path2{
+        clip-path: polygon(0% 0% ,100% 0%, 85% 100% ,0% 100%);
+
+    }
+    .land-img{
+        height: 100%;
+        border-top-right-radius: 14px;
+        border-bottom-right-radius: 14px;
+    }
+    .land2-img{
+        height: 100%;
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px;
+    }
+    .land-card{
+        max-width: 100%;  max-height: 65vh; height: 65vh;
+    }
+   
+}
+.land-card{
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(92, 92, 92));
+}
+.land2-card{
+    background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(92, 92, 92)) !important;
+}
+
+.underline-card{
+    height: 4px;
+    width: 90px;
+    border-radius: 2px;
+    background-color: #afafaf;
+    transition: 0.6s;
+}
+
+.land-card:hover .underline-card{
+    width: 140px;
+}
+.land-card:hover .land-img {
+    transform: scale(1.15,1.15);
+ 
+}
+.land-card:hover .land2-img{
+    transform: scale(1.15,1.15);
+}
